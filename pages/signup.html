@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreadZ | Sign Up</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/refinements.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container flex-between top-bar">
+            <div class="logo">
+                <img src="../assets/images/Logo.png" alt="ThreadZ Logo">
+            </div>
+            
+            <nav id="nav">
+                <div class="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-toggle" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <a href="./login.html" class="action-icon" title="Account"><i class="fa-regular fa-user"></i></a>
+                <a href="./checkout.html" class="action-icon" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="bars"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="search-bar" id="search-bar"><div class="container"><div class="search-bar-inner"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search for products..." id="search-input"><button class="search-close" id="search-close"><i class="fa-solid fa-xmark"></i></button></div></div></div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-image"></div>
+            <div class="login-container">
+                <div class="login-box">
+                    <h2>Create Account</h2>
+                    <p class="subtitle">Join ThreadZ for exclusive streetwear drops.</p>
+
+                    <form action="#" method="POST">
+                        <div style="display: flex; gap: 16px;">
+                            <div class="input-group" style="flex: 1;">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="input-group" style="flex: 1;">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Email address" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+
+                        <button type="submit" class="btn-login">Sign Up</button>
+
+                        <div class="login-divider">
+                            <span>Or register with</span>
+                        </div>
+
+                        <div class="social-login">
+                            <button type="button" class="btn-social">
+                                <i class="fa-brands fa-google" style="color: #DB4437;"></i> Google
+                            </button>
+                            <button type="button" class="btn-social">
+                                <i class="fa-brands fa-apple"></i> Apple
+                            </button>
+                        </div>
+
+                        <p class="signup-link">Already have an account? <a href="./login.html">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-columns">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Materials</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-columns">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="">Size Guide</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-columns">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Shipping Info</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-text">
+                <h3>Quality Guarantee</h3>
+                <p>We pride ourselves on providing premium quality streetwear. If you're not 100% satisfied with your purchase, our team is here to help you with returns and exchanges.</p>
+            </div>
+        </div>
+
+        <div class="footer-contactus">
+            <div class="footer-contactus-text">
+                <h3>Contact Us</h3>
+                <p>Have a question or need help with your order? Reach out to our customer support team.</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-phone-email">
+                    <p><i class="fa-solid fa-phone"></i> Phone: (+20) 123 456 7890 </p>
+                    <p><i class="fa-regular fa-envelope"></i> support@threadz.com</p>  
+                </div>
+                <div class="contact-date">
+                    <p style="text-align: center;"><i class="fa-regular fa-clock"></i> Mon - Fri: 10am - 6pm <br>Sat - Sun: Closed </p>
+                    <p style="text-align: center;"><i class="fa-solid fa-location-dot"></i> ThreadZ HQ, <br> Cairo, Egypt</p>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/ui.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/cart.js"></script>
+</body>
+</html>

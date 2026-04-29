@@ -1,0 +1,433 @@
+/* Hero Section */
+.hero-about {
+    position: relative;
+    padding: 100px 20px;
+    background: var(--bg-gray);
+    text-align: center;
+    border-radius: var(--radius-xl);
+    max-width: 1280px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.hero-about::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(26, 86, 219, 0.05);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-about h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.hero-about p {
+    color: var(--text-light);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 60px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-box .icon-box {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-gray);
+    color: var(--primary-color);
+    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    transition: var(--transition-fast);
+}
+
+.feature-box:hover .icon-box {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Story / New Collections */
+.story-section {
+    display: flex;
+    max-width: 1280px;
+    margin: 80px auto;
+    background: var(--bg-gray);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.story-content {
+    flex: 1;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-content h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.story-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.story-content .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    margin-top: 20px;
+    transition: var(--transition-smooth);
+    align-self: flex-start;
+}
+
+.story-content .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26,86,219,0.3);
+}
+
+.story-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 6s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Team Section */
+.team-section {
+    max-width: 1280px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.team-member {
+    text-align: center;
+    background: var(--bg-gray);
+    border-radius: var(--radius-lg);
+    padding: 40px 20px;
+    transition: var(--transition-smooth);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.team-member h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.team-member span {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.member-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.member-socials i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--text-light);
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.member-socials i:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Popular Section */
+.popular-section {
+    max-width: 1280px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.popular-section h4 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.pop-item {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition-smooth);
+}
+
+.pop-item:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.pop-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    background: var(--bg-gray);
+}
+
+.pop-item p {
+    padding: 20px;
+    color: var(--text-dark);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .features-grid, .popular-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .story-section {
+        flex-direction: column;
+    }
+    .story-image {
+        height: 400px;
+    }
+    .hero-about h1 {
+        font-size: 40px;
+    }
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-about {
+        padding: 60px 20px;
+        margin: 16px;
+        border-radius: var(--radius-lg);
+    }
+
+    .hero-about h1 {
+        font-size: 28px;
+    }
+
+    .hero-about p {
+        font-size: 15px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 32px 16px;
+    }
+
+    .feature-box {
+        padding: 28px 20px;
+        border-radius: var(--radius-md);
+    }
+
+    .feature-box .icon-box {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .feature-box h3 {
+        font-size: 17px;
+    }
+
+    .story-section {
+        margin: 40px 16px;
+        border-radius: var(--radius-lg);
+    }
+
+    .story-content {
+        padding: 32px 20px;
+    }
+
+    .story-content h2 {
+        font-size: 24px;
+    }
+
+    .story-content p {
+        font-size: 14px;
+    }
+
+    .story-image {
+        height: 280px;
+    }
+
+    .team-section {
+        margin: 60px auto;
+        padding: 0 16px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .team-member {
+        padding: 28px 20px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .popular-section {
+        margin: 60px auto;
+        padding: 0 16px;
+    }
+
+    .popular-section h4 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .popular-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pop-item img {
+        height: 200px;
+    }
+
+    .pop-item p {
+        padding: 12px;
+        font-size: 13px;
+    }
+}

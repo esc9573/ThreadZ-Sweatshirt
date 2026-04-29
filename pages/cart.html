@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreadZ | Sweatshirt Details</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/refinements.css">
+    <link rel="stylesheet" href="../style/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container flex-between top-bar">
+            <div class="logo">
+                <img src="../assets/images/Logo.png" alt="ThreadZ Logo">
+            </div>
+
+            <nav id="nav">
+                <div class="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-toggle" id="search-toggle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <a href="./login.html" class="action-icon" title="Account"><i class="fa-regular fa-user"></i></a>
+                <a href="./checkout.html" class="action-icon" title="Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="bars"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <div class="search-bar-inner"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search for products..." id="search-input"><button class="search-close" id="search-close"><i class="fa-solid fa-xmark"></i></button></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Product Details Hero Section -->
+        <section class="product-hero">
+            <div class="product-im">
+                <div class="badge">SALE</div>
+                <img src="../assets/images/model-1.jpg" alt="Signature Oversized Black Hoodie">
+            </div>
+            <div class="product-info">
+                <div class="product-meta-top">
+                    <span class="stock-badge in-stock"><i class="fa-solid fa-circle"></i> In Stock</span>
+                    <span class="sold-count"><i class="fa-solid fa-fire-flame-curved"></i> 1,240+ Sold</span>
+                </div>
+                <h1>Signature Oversized Black Hoodie</h1>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(4.9 — 24 Reviews)</span>
+                </div>
+                <div class="price">
+                    <span class="now">$270.00</span>
+                    <span class="old">$340.00</span>
+                    <span class="discount-tag">-21%</span>
+                </div>
+                <p class="sku">SKU: THZ-236632</p>
+                <p class="description">
+                    The new ThreadZ Signature Oversized Hoodie is a radical design story rooted in premium street culture. Made with 100% heavy-weight luxury cotton, the dropped-shoulder construction wraps your body in absolute comfort and warmth.
+                </p>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label>Size</label>
+                        <div class="size-selector">
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn active">L</button>
+                            <button class="size-btn">XL</button>
+                            <button class="size-btn">XXL</button>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label>Color</label>
+                        <div class="color-selector">
+                            <button class="color-btn active" style="background: #0F172A;" title="Black"></button>
+                            <button class="color-btn" style="background: #6B7280;" title="Gray"></button>
+                            <button class="color-btn" style="background: #1A56DB;" title="Navy"></button>
+                            <button class="color-btn" style="background: #7C3AED;" title="Purple"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity">
+                        <button id="btn-min">-</button>
+                        <p id="text" class="purchase-text">1</p>
+                        <button id="btn-plus">+</button>
+                    </div>
+                    <button class="btn-add" data-name="Signature Oversized Black Hoodie" data-price="270" data-img="../assets/images/model-1.jpg"><i class="fa-solid fa-bag-shopping"></i> Add To Cart</button>
+                </div>
+
+                <div class="product-extras">
+                    <div class="extra-item"><i class="fa-solid fa-truck-fast"></i> Free Shipping over $200</div>
+                    <div class="extra-item"><i class="fa-solid fa-arrow-rotate-left"></i> 30-Day Free Returns</div>
+                    <div class="extra-item"><i class="fa-solid fa-shield-halved"></i> Secure Checkout</div>
+                </div>
+
+                <div class="payment-methods">
+                    <span>Payment:</span>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs -->
+        <section class="product-tabs">
+            <div class="tabs-header">
+                <span class="active" data-tab="details">DETAILS</span>
+                <span data-tab="reviews">REVIEWS (24)</span>
+                <span data-tab="shipping">SHIPPING</span>
+            </div>
+            <div class="tab-content" id="tab-details">
+                <p>Designed in-house at ThreadZ studios. This hoodie features an ultra-soft brushed fleece interior, double-lined hood for structural integrity, and ribbed cuffs and hem to lock in warmth. Machine wash cold, tumble dry low. Do not iron the
+                    graphic print.</p>
+                <ul class="spec-list">
+                    <li><strong>Material:</strong> 100% Heavy-Weight Premium Cotton (380 GSM)</li>
+                    <li><strong>Fit:</strong> Oversized / Dropped Shoulder</li>
+                    <li><strong>Care:</strong> Machine Wash Cold, Tumble Dry Low</li>
+                    <li><strong>Origin:</strong> Ethically sourced, quality-controlled</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-reviews" style="display:none;">
+                <div class="review-item">
+                    <div class="review-header"><strong>Ahmed R.</strong> <span class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+                    <p>"Absolutely love this hoodie! The material is thick and premium. Perfect oversized fit."</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header"><strong>Sarah M.</strong> <span class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-alt"></i></span></div>
+                    <p>"Great quality for the price. Shipping was fast and packaging looked amazing."</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header"><strong>Omar K.</strong> <span class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+                    <p>"Ordered two more after my first purchase. Best streetwear brand in Egypt!"</p>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-shipping" style="display:none;">
+                <ul class="spec-list">
+                    <li><strong>Standard Shipping:</strong> 3-5 business days — Free over $200</li>
+                    <li><strong>Express Shipping:</strong> 1-2 business days — $15.00</li>
+                    <li><strong>International:</strong> 7-14 business days — varies by location</li>
+                    <li><strong>Returns:</strong> Free returns within 30 days of delivery</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Other Products (Using Standard Class Names) -->
+        <section class="other-products">
+            <h2 class="section-title-bar">You May Also Like</h2>
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="image-wrapper">
+                        <img src="../assets/images/item-2.jpg" alt="Minimalist Crewneck">
+                        <p>SALE</p>
+                    </div>
+                    <p>Classic Gray Minimalist Crewneck</p>
+                    <span class="price">$130.00</span>
+                    <button class="add-to-cart" data-name="Classic Gray Minimalist Crewneck" data-price="130" data-img="../assets/images/item-2.jpg">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-wrapper">
+                        <img src="../assets/images/model-4.jpg" alt="Vintage Graphic">
+                    </div>
+                    <p>Vintage Graphic Crewneck</p>
+                    <span class="price">$150.00</span>
+                    <button class="add-to-cart" data-name="Vintage Graphic Crewneck" data-price="150" data-img="../assets/images/model-4.jpg">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-wrapper">
+                        <img src="../assets/images/model-3.jpg" alt="Fleece Zip">
+                        <p>SALE</p>
+                    </div>
+                    <p>Essential Tech Fleece Zip</p>
+                    <span class="price">$390.00</span>
+                    <button class="add-to-cart" data-name="Essential Tech Fleece Zip" data-price="390" data-img="../assets/images/model-3.jpg">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="image-wrapper">
+                        <img src="../assets/images/item-4.jpg" alt="Graphic Print">
+                    </div>
+                    <p>Limited Edition Graphic Print</p>
+                    <span class="price">$280.00</span>
+                    <button class="add-to-cart" data-name="Limited Edition Graphic Print" data-price="280" data-img="../assets/images/item-4.jpg">Add To Cart</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-columns">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Materials</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-columns">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="">Size Guide</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-columns">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Shipping Info</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <h3>Quality Guarantee</h3>
+                <p>We pride ourselves on providing premium quality streetwear. If you're not 100% satisfied with your purchase, our team is here to help you with returns and exchanges.</p>
+            </div>
+        </div>
+
+        <div class="footer-contactus">
+            <div class="footer-contactus-text">
+                <h3>Contact Us</h3>
+                <p>Have a question or need help with your order? Reach out to our customer support team.</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-phone-email">
+                    <p><i class="fa-solid fa-phone"></i> Phone: (+20) 123 456 7890 </p>
+                    <p><i class="fa-regular fa-envelope"></i> support@threadz.com</p>
+                </div>
+                <div class="contact-date">
+                    <p style="text-align: center;"><i class="fa-regular fa-clock"></i> Mon - Fri: 10am - 6pm <br>Sat - Sun: Closed </p>
+                    <p style="text-align: center;"><i class="fa-solid fa-location-dot"></i> ThreadZ HQ, <br> Cairo, Egypt</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/ui.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/cart.js"></script>
+</body>
+
+</html>
