@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="./style/refinements.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <div class="container flex-between top-bar">
             <div class="logo">
                 <img src="./assets/images/Logo.png" alt="ThreadZ Logo">
             </div>
-            
+
             <nav id="nav">
                 <div class="nav-close">
                     <i class="fa-solid fa-x"></i>
@@ -60,7 +62,7 @@
                 <p>Discover the ultimate comfort and streetwear vibes with our new winter collection.</p>
                 <button>View All Items</button>
             </div>
-            <img src="./assets/images/Sweatshirt_Model.png" alt="Sweatshirt Model">
+            <img id="hero-hoodie" src="./assets/images/Sweatshirt_Model.png" alt="Sweatshirt Model">
         </section>
 
         <section class="promotion-container">
@@ -109,7 +111,7 @@
         <section class="testimonials-section">
             <h3>Our Grateful Customers</h3>
             <p>What people say about our quality</p>
-            
+
             <div class="Customers">
                 <!-- Data rendered dynamically from api.js -->
             </div>
@@ -144,7 +146,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-text">
                 <h3>Quality Guarantee</h3>
                 <p>We pride ourselves on providing premium quality streetwear. If you're not 100% satisfied with your purchase, our team is here to help you with returns and exchanges.</p>
@@ -160,11 +162,11 @@
             <div class="contact-info">
                 <div class="contact-phone-email">
                     <p><i class="fa-solid fa-phone"></i> Phone: (+20) 123 456 7890 </p>
-                    <p><i class="fa-regular fa-envelope"></i> support@threadz.com</p>  
+                    <p><i class="fa-regular fa-envelope"></i> support@threadz.com</p>
                 </div>
                 <div class="contact-date">
                     <p style="text-align: center;"><i class="fa-regular fa-clock"></i> Mon - Fri: 10am - 6pm <br>Sat - Sun: Closed </p>
-                    <p style="text-align: center;"><i class="fa-solid fa-location-dot"></i> ThreadZ HQ, <br> Cairo, Egypt</p>  
+                    <p style="text-align: center;"><i class="fa-solid fa-location-dot"></i> ThreadZ HQ, <br> Cairo, Egypt</p>
                 </div>
             </div>
         </div>
@@ -174,5 +176,39 @@
     <script src="./scripts/ui.js"></script>
     <script src="./scripts/search.js"></script>
     <script src="./scripts/cart.js"></script>
+    <script>
+        // تحديث زر الدخول - يصير "Dashboard" لو مسجل
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('./php/check_session.php')
+                .then(res => res.json())
+                .then(data => {
+                    const loginLink = document.querySelector('a[title="Account"]');
+                    if (data.status === 'success') {
+                        // المستخدم مسجل، غيّر الرابط للـ Dashboard
+                        loginLink.href = './pages/dach.html';
+                        loginLink.title = 'Dashboard';
+                    }
+                })
+                .catch(err => console.log('Session check failed'));
+
+            const heroImage = document.getElementById('hero-hoodie');
+            const hoodieImages = [
+                './assets/images/Sweatshirt_Model.png',
+                './assets/images/Sweatshirt_Model1.png',
+                './assets/images/Sweatshirt_Model2.png',
+                './assets/images/Sweatshirt_Model3.png',
+
+            ];
+            let hoodieIndex = 0;
+
+            if (heroImage) {
+                setInterval(() => {
+                    hoodieIndex = (hoodieIndex + 1) % hoodieImages.length;
+                    heroImage.src = hoodieImages[hoodieIndex];
+                }, 3000);
+            }
+        });
+    </script>
 </body>
+
 </html>
